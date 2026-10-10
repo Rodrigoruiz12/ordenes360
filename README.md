@@ -1,4 +1,4 @@
-﻿# MS-rdenes
+﻿# MS-Ordenes
 
 Microservicio encargado de procesar y registrar las compras formales en la tienda.
 
