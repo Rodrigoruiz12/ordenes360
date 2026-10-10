@@ -4,7 +4,7 @@ Microservicio encargado de procesar y registrar las compras formales en la tiend
 
 ## Caractersticas
 - Recibe las intenciones de compra desde el Frontend.
-- **Productor RabbitMQ:** Al crearse una orden, emite el evento orden.creada al exchange otilleria.exchange.
+- **Productor RabbitMQ:** Al crearse una orden, emite el evento orden.creada al exchange Botilleria.exchange.
 - Se registra en Netflix Eureka.
 - Protegido va Microsoft Entra ID (Azure AD).
 
