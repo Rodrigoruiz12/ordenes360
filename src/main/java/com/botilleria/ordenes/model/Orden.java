@@ -1,60 +1,21 @@
 package com.botilleria.ordenes.model;
 
+import java.util.List;
+
 public class Orden {
-    private Long identificador;
-    private String nombre;
-    private Integer precio;
-    private Integer inventario;
-    private String imagen;
+    private String id;
+    private String usuarioId;
+    private List<OrderItem> items;
+    private Double total;
 
-    public Orden() {
-    }
+    public Orden() {}
 
-    public Orden(Long identificador, String nombre, Integer precio, Integer inventario, String imagen) {
-        this.identificador = identificador;
-        this.nombre = nombre;
-        this.precio = precio;
-        this.inventario = inventario;
-        this.imagen = imagen;
-    }
-
-    public Long getIdentificador() {
-        return identificador;
-    }
-
-    public void setIdentificador(Long identificador) {
-        this.identificador = identificador;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public Integer getPrecio() {
-        return precio;
-    }
-
-    public void setPrecio(Integer precio) {
-        this.precio = precio;
-    }
-
-    public Integer getInventario() {
-        return inventario;
-    }
-
-    public void setInventario(Integer inventario) {
-        this.inventario = inventario;
-    }
-
-    public String getImagen() {
-        return imagen;
-    }
-
-    public void setImagen(String imagen) {
-        this.imagen = imagen;
-    }
+    public String getId() { return id; }
+    public void setId(String id) { this.id = id; }
+    public String getUsuarioId() { return usuarioId; }
+    public void setUsuarioId(String usuarioId) { this.usuarioId = usuarioId; }
+    public List<OrderItem> getItems() { return items; }
+    public void setItems(List<OrderItem> items) { this.items = items; }
+    public Double getTotal() { return total; }
+    public void setTotal(Double total) { this.total = total; }
 }
