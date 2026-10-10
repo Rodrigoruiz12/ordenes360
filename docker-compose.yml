@@ -1,0 +1,9 @@
+services:
+  usuarios:
+    build: .
+    container_name: ms-ordenes
+    ports:
+      - "8084:8084"
+    env_file:
+      - .env
+    restart: unless-stopped
