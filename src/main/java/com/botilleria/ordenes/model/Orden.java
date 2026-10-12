@@ -1,12 +1,22 @@
-package com.botilleria.ordenes.model;
+﻿package com.botilleria.ordenes.model;
 
+import jakarta.persistence.*;
 import java.util.List;
 
+@Entity
+@Table(name = "ordenes")
 public class Orden {
+
+    @Id
     private String id;
+
+    @Column(name = "usuario_id")
     private String usuarioId;
-    private List<OrderItem> items;
+
     private Double total;
+
+    @Transient
+    private List<OrderItem> items;
 
     public Orden() {}
 
