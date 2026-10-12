@@ -13,7 +13,7 @@ public class OrdenController {
     @Autowired
     private OrdenService ordenService;
 
-    @PostMapping
+    @PostMapping("/nueva")
     public ResponseEntity<Orden> crearOrden(@RequestBody Orden orden) {
         Orden nuevaOrden = ordenService.crearOrden(orden);
         return ResponseEntity.ok(nuevaOrden);
