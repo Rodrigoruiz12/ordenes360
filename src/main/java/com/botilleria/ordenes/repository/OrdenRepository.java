@@ -1,4 +1,4 @@
-﻿package com.botilleria.ordenes.repository;
+package com.botilleria.ordenes.repository;
 
 import com.botilleria.ordenes.model.Orden;
 import org.springframework.data.jpa.repository.JpaRepository;

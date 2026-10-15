@@ -1,4 +1,4 @@
-﻿package com.botilleria.ordenes.service;
+package com.botilleria.ordenes.service;
 
 import com.botilleria.ordenes.model.Orden;
 import com.botilleria.ordenes.config.RabbitMQConfig;
